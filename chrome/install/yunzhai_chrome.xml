@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>
+	<app appid='cejonnnefpmikoemjieoahbaoffcbnog'>
+		<updatecheck codebase='http://www.downsha.com/version/yunzhai_chrome_20120911.crx' version='1.1.0.20911' />
+	</app>
+	<app appid='fjfgeonblbdcofcokojamlcnomcdliap'>
+		<updatecheck codebase='http://www.downsha.com/version/yunzhai_chrome.crx' version='1.2.0.21102' />
+	</app>
+</gupdate>

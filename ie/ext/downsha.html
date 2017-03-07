@@ -1,0 +1,52 @@
+<!-- downsha extension script for IE 6/7/8/9 -->
+<!--
+<script type="text/javascript" src="libs/downsha/Downsha.js"></script>
+<script type="text/javascript" src="libs/downsha/Platform.js"></script>
+<script type="text/javascript" src="libs/downsha/I18N.js"></script>
+<script type="text/javascript" src="libs/downsha/Logger/Logger.js"></script>
+<script type="text/javascript" src="libs/downsha/Logger/IEExtensionLoggerImpl.js"></script>
+<script type="text/javascript" src="libs/downsha/Utils.js"></script>
+<script type="text/javascript" src="libs/downsha/Constants.js"></script>
+<script type="text/javascript" src="libs/downsha/IEExtension.js"></script>
+
+<script type="text/javascript" src="libs/downsha/Extractors/ExtractContentJS.js"></script>
+<script type="text/javascript" src="libs/downsha/SelectionFinder.js"></script>
+<script type="text/javascript" src="libs/downsha/ContentVeil.js"></script>
+<script type="text/javascript" src="libs/downsha/AbstractStyleScript.js"></script>
+<script type="text/javascript" src="libs/downsha/PageInfoScript.js"></script>
+<script type="text/javascript" src="libs/downsha/PreviewerScript.js"></script>
+<script type="text/javascript" src="libs/downsha/Clip.js"></script>
+<script type="text/javascript" src="libs/downsha/ClipStyle.js"></script>
+<script type="text/javascript" src="libs/downsha/ClipperScript.js"></script>
+<script type="text/javascript" src="libs/downsha/Popup.js"></script>
+<script type="text/javascript" src="libs/downsha/Startup.js"></script>
+-->
+<script type="text/javascript">
+  (function downshaHtml() {
+  	var DOWNSHA_SCRIPT_PATH = "http://localhost/";
+  	var DOWNSHA_SCRIPT_NAME = ["DownshaAll.js"];
+  	var win = window.external.menuArguments;
+  	var doc = win.document;
+  	var docRoot = doc.head || doc.body.parentNode;
+  	var scriptNode = null;
+  	for (var i = 0; i < DOWNSHA_SCRIPT_NAME.length; i++) {
+  		scriptNode = doc.createElement("script");
+  		scriptNode.type = "text/javascript";
+  		scriptNode.charset = "gbk";
+  		scriptNode.src = DOWNSHA_SCRIPT_PATH + DOWNSHA_SCRIPT_NAME[i];
+  		docRoot.appendChild(scriptNode);
+  	}
+  	/*
+  	var startupCode = "" + 
+  		"var LOG = Downsha.Logger.getInstance();" + // create global logger for current environment
+  		"window.onerror = function(errorMsg, url, lineNumber) {" + 
+  		"  LOG.exception(\"\\\n\" + url + \":\" + lineNumber + \": \" + errorMsg + \"\\\n\");" + 
+  		"};" + 
+  		"Downsha.getIEExtension();";
+		scriptNode = doc.createElement("script");
+		scriptNode.type = "text/javascript";
+		scriptNode.text = startupCode;
+		docRoot.appendChild(scriptNode);
+		*/
+  })();
+</script>

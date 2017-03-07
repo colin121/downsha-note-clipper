@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <link rel="stylesheet" type="text/css" href="css/downsha.css" />
+	  <link rel="stylesheet" type="text/css" href="css/forms.css" />
+	  <link rel="stylesheet" type="text/css" href="css/popup.css" />
+	  
+    <script type="text/javascript" src="libs/jquery/jquery-1.8.1.min.js"></script>
+	  <script type="text/javascript" src="libs/jquery/jquery.validate.min.js"></script>
+	  <script type="text/javascript" src="libs/jquery/jquery.validate.methods.js"></script>
+	  <script type="text/javascript" src="libs/md5.js"></script>
+	  <!--
+	  <script type="text/javascript" src="libs/DownshaBase.js"></script>
+	  <script type="text/javascript" src="libs/DownshaPopup.js"></script>
+	  -->
+		<script type="text/javascript" src="libs/downsha/Downsha.js"></script>
+		<script type="text/javascript" src="libs/downsha/DownshaError.js"></script>
+		<script type="text/javascript" src="libs/downsha/Logger/Logger.js"></script>
+		<script type="text/javascript" src="libs/downsha/Logger/ChromeExtensionLoggerImpl.js"></script>
+		<script type="text/javascript" src="libs/downsha/CacheManager/CacheManager.js"></script>
+		<script type="text/javascript" src="libs/downsha/CacheManager/ChromeCacheManagerImpl.js"></script>
+		<script type="text/javascript" src="libs/downsha/Platform.js"></script>
+		<script type="text/javascript" src="libs/downsha/LocalStore.js"></script>
+		<script type="text/javascript" src="libs/downsha/Utils.js"></script>
+		<script type="text/javascript" src="libs/downsha/DownshaContext.js"></script>
+		<script type="text/javascript" src="libs/downsha/DownshaRemote.js"></script>
+		<script type="text/javascript" src="libs/downsha/ClipConverter.js"></script>
+		<script type="text/javascript" src="libs/downsha/ClipSender.js"></script>
+		<script type="text/javascript" src="libs/downsha/DownshaModel.js"></script>
+		<script type="text/javascript" src="libs/downsha/Options.js"></script>
+		<script type="text/javascript" src="libs/downsha/Constants.js"></script>
+		<script type="text/javascript" src="libs/downsha/EventHandler.js"></script>
+		<script type="text/javascript" src="libs/downsha/RequestMessage.js"></script>
+		<script type="text/javascript" src="libs/downsha/ChromeExtension.js"></script>
+		<script type="text/javascript" src="libs/downsha/ChromeExtensionRemote.js"></script>
+		<script type="text/javascript" src="libs/downsha/ContentScripting/AbstractContentScripting.js"></script>
+		<script type="text/javascript" src="libs/downsha/ContentScripting/ClipperContentScripting.js"></script>
+		<script type="text/javascript" src="libs/downsha/ContentScripting/PreviewerContentScripting.js"></script>
+		<script type="text/javascript" src="libs/downsha/ContentScripting/PageInfoContentScripting.js"></script>
+		<script type="text/javascript" src="libs/downsha/ViewManager.js"></script>
+		<script type="text/javascript" src="libs/downsha/NoteForm.js"></script>
+		<script type="text/javascript" src="libs/downsha/ChromePopup.js"></script>
+	</head>
+	<body class="popup">
+	  <!-- div for spinner -->
+	  <div id="spinner" class="spinner banner">
+	    <div id="spinnerMessage"></div>
+	  </div>
+	  <!-- div for global message -->
+	  <div id="globalMessage" class="globalMessage banner">
+	  </div>
+	  <!-- header bar for home/logout/register -->
+	  <div id="header" style="display: none;">
+	    <div id="headerLogo">
+	      <a id="headerLogoHome" href="#" tabindex="-1"><img src="images/popup_logo.png"/></a>
+	      <span id="headerLogoMessage" message="header_slogon"></span>
+	    </div>
+	    <div id="headerUser" class="headerLinks">
+	      <a id="headerSignout" message="signout" href="#" tabindex="101"></a> (<span id="headerUsername"></span>)
+	    </div>
+	    <div id="headerNoUserRegister" class="headerLinks">
+	      <a id="headerRegister" message="header_register" href="#" tabindex="102"></a>
+	    </div>
+	    <div id="headerNoUserLogin" class="headerLinks">
+	      <a id="headerLogin" message="header_login" href="#" tabindex="103"></a>
+	    </div>
+	  </div>
+	  <!-- div for global error message -->
+	  <div id="globalErrorMessage" class="globalErrorMessage banner">
+	  </div>
+	  <!-- div for login view -->
+	  <div id="loginView" class="view">
+	    <form name="loginForm" action="#">
+	      <table class="formTable">
+	        <tr>
+	          <td><label for="username" message="loginForm_username"></label></td>
+	          <td><input type="text" name="username" id="loginUserName" maxlength="32" tabindex="1" placeholder="loginForm_usernamePrompt"/> </td>
+	        </tr>
+	        <tr>
+	          <td><label for="password" message="loginForm_password"></label></td> 
+	          <td><input type="password" name="password" id="loginPassword" maxlength="32" tabindex="2"/> </td>
+	        </tr>
+	        <tr class="actionControlRow">
+	          <td>&nbsp;</td>
+	          <td> 	
+	            <input type="submit" name="login" message="loginForm_login" style="margin-bottom: 8px;" tabindex="3"/>
+							<span class="platform">
+			    			<a class="platform_desktop" title="platform_desktop" href="#"><img src="images/platform_windows.png"/></a>
+			    			<a class="platform_mobile" title="platform_mobile" href="#"><img src="images/platform_android.png"/></a>
+			    			<a class="platform_windows8" title="platform_windows8" href="#"><img src="images/platform_windows8.png"/></a>
+			    			<a class="platform_chrome" title="platform_chrome" href="#"><img src="images/platform_chrome.png"/></a>
+			    			<a class="platform_firefox" title="platform_firefox" href="#"><img src="images/platform_firefox.png"/></a>
+			    			<a class="platform_ie" title="platform_ie" href="#"><img src="images/platform_ie.png"/></a>
+							</span>
+	          </td>
+	        </tr>
+	      </table>
+	    </form>
+	  </div>
+	  <!-- div for register view -->
+	  <div id="registerView" class="view">
+	    <form name="registerForm" action="#">
+	      <table class="formTable">
+	        <tr>
+	          <td><label for="username" message="registerForm_username"></label></td> 
+	          <td><input type="text" name="username" id="registerUserName" maxlength="32" tabindex="11" placeholder="registerForm_usernamePrompt"/> </td>
+	        </tr>
+	        <tr>
+	          <td><label for="password" message="registerForm_password"></label></td> 
+	          <td><input type="password" name="password" id="registerPassword" maxlength="32" tabindex="12" placeholder="registerForm_passwordPrompt"/> </td>
+	        </tr>
+	        <tr>
+	          <td><label for="password2" message="registerForm_password2"></label></td> 
+	          <td><input type="password" name="password2" id="registerPassword2" maxlength="32" tabindex="13" placeholder="registerForm_password2Prompt"/> </td>
+	        </tr>
+	        <tr class="actionControlRow">
+	          <td>&nbsp;</td>
+	          <td>
+	            <input type="submit" name="register" message="registerForm_register" style="margin-bottom: 8px;" tabindex="14"/>
+							<span class="platform">
+			    			<a class="platform_desktop" title="platform_desktop" href="#"><img src="images/platform_windows.png"/></a>
+			    			<a class="platform_mobile" title="platform_mobile" href="#"><img src="images/platform_android.png"/></a>
+			    			<a class="platform_windows8" title="platform_windows8" href="#"><img src="images/platform_windows8.png"/></a>
+			    			<a class="platform_chrome" title="platform_chrome" href="#"><img src="images/platform_chrome.png"/></a>
+			    			<a class="platform_firefox" title="platform_firefox" href="#"><img src="images/platform_firefox.png"/></a>
+			    			<a class="platform_ie" title="platform_ie" href="#"><img src="images/platform_ie.png"/></a>
+							</span>
+	          </td>
+	        </tr>
+	      </table>
+	    </form>
+	  </div>
+	  <!-- div for quick note view -->
+	  <div id="quickNoteView" class="view">
+	    <form name="quickNoteForm" class="compactForm" action="#">
+	      <div class="row firstRow">
+	      	<span class="field" message="quickNote_title"></span>
+	        <input type="text" name="title" title="quickNote_title" maxlength="127" tabindex="21" placeholder="quickNote_untitledNote"/>
+	      </div>
+	      <div class="row lastRow">
+	      	<div id="clipAction">
+	      		<span class="field" message="quickNote_content"></span>
+	      		<input type="radio" name="content" value="CLIP_ACTION_SELECTION" id="CLIP_ACTION_SELECTION" />
+	      		<label for="CLIP_ACTION_SELECTION" message="quickNoteAction_clipSelection"></label>
+	      		<input type="radio" name="content" value="CLIP_ACTION_ARTICLE" id="CLIP_ACTION_ARTICLE" />
+	      		<label for="CLIP_ACTION_ARTICLE" message="quickNoteAction_clipArticle"></label>
+	      		<input type="radio" name="content" value="CLIP_ACTION_FULL_PAGE" id="CLIP_ACTION_FULL_PAGE" />
+	      		<label for="CLIP_ACTION_FULL_PAGE" message="quickNoteAction_clipFullPage"></label>
+	      		<input type="radio" name="content" value="CLIP_ACTION_URL" id="CLIP_ACTION_URL" />
+	      		<label for="CLIP_ACTION_URL" message="quickNoteAction_clipUrl"></label>
+	      	</div>
+	      </div>
+	      <div class="controls">
+					<div class="tips" id="quickNoteTips">
+						<img src="images/icon_tips.png"/>
+						<span role="CLIP_ACTION_SELECTION" message="quickNote_clipSelectionTip">
+						</span>
+						<span role="CLIP_ACTION_ARTICLE">
+							<span message="quickNote_clipArticleTip"></span>
+							<img class="buttons" id="quickNoteArticlePrev" title="quickNote_articlePrev" src="images/article_prev.png"/>
+							<img class="buttons" id="quickNoteArticleNext" title="quickNote_articleNext" src="images/article_next.png"/>
+							<img class="buttons" id="quickNoteArticleShrink" title="quickNote_articleShrink" src="images/article_shrink.png"/>
+							<img class="buttons" id="quickNoteArticleExpand" title="quickNote_articleExpand" src="images/article_expand.png"/>
+						</span>
+						<span role="CLIP_ACTION_FULL_PAGE" message="quickNote_clipFullPageTip">
+						</span>
+						<span role="CLIP_ACTION_URL" message="quickNote_clipUrlTip">
+						</span>
+					</div>
+		      <div class="actions">
+		      	<input type="submit" name="quickNote" id="quickNoteSubmit" message="quickNote_submit" tabindex="22"/>
+		      </div>
+		    </div>
+	      <textarea name="content" style="display: none;"></textarea>
+	      <input type="hidden" name="url" />
+	    </form>
+	    <div id="quickNoteContent">
+	    	<div id="platformTabs">
+	    		<div id="platformWeb" class="tab" message="platform_webmini"></div>
+	    		<div id="platformOther">
+	    			<a class="platform_desktop" title="platform_desktop" href="#"><img src="images/platform_windows.png"/></a>
+	    			<a class="platform_mobile" title="platform_mobile" href="#"><img src="images/platform_android.png"/></a>
+	    			<a class="platform_windows8" title="platform_windows8" href="#"><img src="images/platform_windows8.png"/></a>
+	    			<a class="platform_chrome" title="platform_chrome" href="#"><img src="images/platform_chrome.png"/></a>
+	    			<a class="platform_firefox" title="platform_firefox" href="#"><img src="images/platform_firefox.png"/></a>
+	    			<a class="platform_ie" title="platform_ie" href="#"><img src="images/platform_ie.png"/></a>
+	    		</div>
+	    	</div>
+	    	<iframe id="platformFrame" name="platformFrame" width="100%" height="330px" frameborder="0" scrolling="auto"></iframe>
+	    </div>
+	  </div>
+	</body>
+</html>

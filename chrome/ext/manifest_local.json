@@ -1,0 +1,23 @@
+{
+   "background_page": "background.html",
+   "browser_action": {
+      "default_icon": "images/downsha19.png",
+      "default_popup": "popup.html",
+      "default_title": "__MSG_BrowserActionTitle__"
+   },
+   "default_locale": "zh_CN",
+   "description": "__MSG_ExtensionDescription__",
+   "homepage_url": "http://www.downsha.com/",
+   "icons": {
+      "128": "images/downsha128.png",
+      "16": "images/downsha16.png",
+      "48": "images/downsha48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCj9hi8MEKomOmtk2tl2cvMP8sqxcBTHU34KsRugLwICOwH3h1V2sJ9RtEO/KjobYfx9o1Nyfcaby+ZUH98yI7CCygosMTIeOdDUG7JH4XxCl3KWzyiUHsJd4D0WiGZJpaVasqboIq5/xQn/jMuo2ur5GIBEwrm7JcG6rkTGBFSDwIDAQAB",
+   "minimum_chrome_version": "7.0",
+   "name": "__MSG_ExtensionName__",
+   "permissions": [ "unlimitedStorage", "contextMenus", "cookies", "tabs", "notifications", "http://*/*", "https://*/*" ],
+   "update_url": "http://www.downsha.com/version/yunzhai_chrome.xml",
+   "version": "1.2.0.21102",
+   "web_accessible_resources": [ "css/contentclipper.css", "css/contentpreview.css", "css/contentveil.css", "images/icon_scissors.png", "images/downsha48.png", "libs/DownshaClip.js", "libs/DownshaPage.js", "libs/DownshaPreview.js" ]
+}

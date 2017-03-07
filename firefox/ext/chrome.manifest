@@ -1,0 +1,16 @@
+content downsha chrome/content/
+
+locale downsha en-US chrome/locale/en-US/
+locale downsha zh-CN chrome/locale/zh-CN/
+
+resource downsha-styles chrome/content/css/
+resource downsha-images chrome/content/images/
+
+# Firefox main window
+overlay	chrome://browser/content/browser.xul chrome://downsha/content/overlay.xul
+
+skin downsha classic/1.0 chrome/skin/classic/
+
+# Firefox style
+style	chrome://browser/content/browser.xul chrome://downsha/skin/overlay.css
+style	chrome://global/content/customizeToolbar.xul chrome://downsha/skin/overlay.css

@@ -1,0 +1,36 @@
+#downsha-button stack label.processing {
+	background-color: #FCFC63 !important;
+	right: 0;
+	bottom: 0;
+	height: 11px;
+	font-size: 9px;
+	border-radius: 2px; border: 1px solid #9E9E00 !important;
+	color: white;
+	background-image: -moz-linear-gradient(top, #FCFC63, #9E9E00) !important;
+	text-shadow: black 1px 1px 2px, red 0 0 1em !important;
+	font-weight: 600 !important;
+	margin: 0;
+}
+
+#downsha-button stack label {
+	background-color: red;
+	right: 0;
+	bottom: 0;
+	height: 11px;
+	font-size: 9px;
+	border-radius: 2px; border: 1px solid #b50000; color: white;
+	background-image: -moz-linear-gradient(top, #e74142, #ce2021);
+	text-shadow: black 1px 1px 2px, red 0 0 1em !important;
+	font-weight: 600 !important;
+	margin: 0;
+}
+
+toolbar[iconsize="small"] #downsha-button stack label.small {
+	height: 12px !important;
+	font-size: 9px !important;
+}
+
+#downsha-button stack label.small,
+#downsha-button stack label.big {
+	display: none;
+}

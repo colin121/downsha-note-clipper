@@ -1,0 +1,528 @@
+{
+   "ExtensionName": {
+      "description": "Name of the extension as it's visible to the outside world",
+      "message": "Downsha Web Clipper"
+   },
+   "ExtensionDescription": {
+      "description": "Description of the extension as it's visible to the outside world",
+      "message": "Use the Downsha Web Clipper to save interesting web pages into your Downsha account. You can also view, edit, search and share clipping pages by our desktop, mobile and other web apps."
+   },
+   "BrowserActionTitle": {
+      "description": "Title for the browser action that's visible to the user of extension",
+      "message": "Clip to Downsha"
+   },
+   "BrowserActionTitlePending": {
+      "description": "Title for the browser action that's visible to the user of extension when there are clips being uploaded in the background",
+      "message": "Uploading unsaved clips"
+   },
+   "copyright": {
+      "description": "Copyright statement",
+      "message": "&copy; 2011-2012, Downsha Corporation."
+   },
+   "introPageUrl": {
+      "description": "URL to the intro page for the extension",
+      "message": "http://www.downsha.com/"
+   },
+   "contextMenuClipAll": {
+      "description": "Context menu item for clipping all",
+      "message": "Clip to Downsha"
+   },
+   "contextMenuPleaseLogin": {
+      "description": "Help message shown to users when they try to clip content via contextual menu items but not being intially logged in",
+      "message": "You must sign in using the Clip To Downsha toolbar button before you can make clips"
+   },
+   "header_slogon": {
+      "description": "Slogon text in header",
+      "message": "The best web clipper"
+   },
+   "header_register": {
+      "description": "Registration link in header",
+      "message": "Register"
+   },
+   "header_login": {
+      "description": "Login link in header",
+      "message": "Login"
+   }, 
+   "signout": {
+      "description": "Text on a link prompting for signing out currently logged in user",
+      "message": "Logout"
+   }, 
+   "more": {
+      "description": "General purpose, capitalized word for More - as in - there's more to see/read etc.",
+      "message": "More"
+   },
+   "dismiss": {
+      "description": "Message shown on buttons to dismiss a widget of some kind",
+      "message": "Dismiss"
+   }, 
+   "loading": {
+      "description": "Message shown when extension is loading...",
+      "message": "Loading..."
+   }, 
+   "unsupportedScheme": {
+      "description": "The error to display when the popup can't operate on a specific type of url.",
+      "message": "Current page is unclippable, please open new web page to clip."
+   },
+   "platform_webmini": {
+      "description": "Label for web tab",
+      "message": "Mini Web"
+   },
+   "platform_desktop": {
+      "description": "Label for desktop",
+      "message": "Desktop"
+   },
+   "platform_mobile": {
+      "description": "Label for mobile",
+      "message": "Mobile"
+   },
+   "platform_windows8": {
+      "description": "Label for windows 8",
+      "message": "Windows 8 App"
+   },
+   "platform_chrome": {
+      "description": "Label for chrome",
+      "message": "Chrome Extension"
+   },
+   "platform_firefox": {
+      "description": "Label for firefox",
+      "message": "Firefox Addon"
+   },
+   "platform_ie": {
+      "description": "Label for ie",
+      "message": "IE Plugin"
+   },
+   "platform_website": {
+      "description": "Label for website",
+      "message": "Website"
+   },
+   "loggingIn": {
+      "description": "Message indicating that the extension is currently attempting to sign in user",
+      "message": "Logging in"
+   },
+   "loggingOut": {
+      "description": "Message indicating that the extension is currently attempting to sign out user",
+      "message": "Logging out"
+   },
+   "loginForm_login": {
+      "description": "Login button label for login form",
+      "message": "Login"
+   },
+   "loginForm_password": {
+      "description": "Label for entering password into login form",
+      "message": "Password"
+   },
+   "loginForm_rememberMe": {
+      "description": "Label for extending login session",
+      "message": "Remember me"
+   },
+   "loginForm_username": {
+      "description": "Label for entering username into login form",
+      "message": "Username"
+   },
+   "loginForm_usernamePrompt": {
+      "description": "Prompt for username input",
+      "message": "Please type your user name here"
+   },
+   "registering": {
+      "description": "Message indicating that the extension is currently registering",
+      "message": "Registering"
+   },
+   "registerForm_register": {
+      "description": "Register button label for register form",
+      "message": "Register"
+   },
+   "registerForm_password": {
+      "description": "Label for entering password into register form",
+      "message": "Password"
+   },
+   "registerForm_passwordPrompt": {
+      "description": "Prompt for password input",
+      "message": "6-16 letters or numbers"
+   },
+   "registerForm_password2": {
+      "description": "Label for confirming password into register form",
+      "message": "Confirm"
+   },
+   "registerForm_password2Prompt": {
+      "description": "Prompt for password2 input",
+      "message": "Please type your password again"
+   },
+   "registerForm_username": {
+      "description": "Label for entering username into register form",
+      "message": "Username"
+   },
+   "registerForm_usernamePrompt": {
+      "description": "Prompt for username input",
+      "message": "6-16 letters or numbers"
+   },
+   "quickNote": {
+      "description": "Title for creating quick note",
+      "message": "Clip"
+   },
+   "quickNote_clipSelectionTip": {
+      "description": "Label for tips in clip selection mode",
+      "message": "Only the selected part will be clipped"
+   },
+   "quickNote_clipArticleTip": {
+      "description": "Label for tips in clip article mode",
+      "message": "You can adjust article area here"
+   },
+   "quickNote_clipFullPageTip": {
+      "description": "Label for tips in clip full page mode",
+      "message": "Video clip is supported now."
+   },
+   "quickNote_clipUrlTip": {
+      "description": "Label for tips in clip url mode",
+      "message": "Only the title and url will be clipped"
+   },
+   "quickNote_articleExpand": {
+      "description": "Label for expand article",
+      "message": "Expand article area"
+   },
+   "quickNote_articleShrink": {
+      "description": "Label for shrink article",
+      "message": "Shrink article area"
+   },
+   "quickNote_articlePrev": {
+      "description": "Label for previous article",
+      "message": "Select previous block as article"
+   },
+   "quickNote_articleNext": {
+      "description": "Label for next article",
+      "message": "Select next block as article"
+   },
+   "quickNoteAction_clipArticle": {
+      "description": "Label for clipping article action",
+      "message": "Article"
+   },
+   "quickNoteAction_clipFullPage": {
+      "description": "Label for clipping full page action",
+      "message": "Entire"
+   },
+   "quickNoteAction_clipSelection": {
+      "description": "Label for clipping selection action",
+      "message": "Selected"
+   },
+   "quickNoteAction_clipUrl": {
+      "description": "Label for clipping URL action",
+      "message": "Title and URL"
+   },
+   "quickNote_addTags": {
+      "description": "Placeholder text for tag input",
+      "message": "Click to add tags"
+   },
+   "quickNote_cancel": {
+      "description": "Label for dismissing quick note composition dialog",
+      "message": "Cancel"
+   },
+   "quickNote_notebook": {
+      "description": "Label for selection of note's notebook",
+      "message": "Notebook"
+   },
+   "quickNote_submit": {
+      "description": "Label for saving quick note",
+      "message": "Save"
+   },
+   "quickNote_tagNames": {
+      "description": "Label for note's tags",
+      "message": "Tags"
+   },
+   "quickNote_title": {
+      "description": "Label for note title",
+      "message": "Title"
+   },
+   "quickNote_content": {
+      "description": "Label for note content",
+      "message": "Content"
+   },
+   "quickNote_untitledNote": {
+      "description": "Placeholder title for untitled note",
+      "message": "Untitled note"
+   },
+   "contentScriptTimedOut": {
+      "description": "Message shown to user when the page is unresponsive and the extension cannot gather any content from the webpage.",
+      "message": "Sorry, Downsha tried to clip this page, but the page is unresponsive. You can still remember this page with its URL but without content."
+   },
+   "contentclipper_clipping": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping... Should be as brief as possible",
+      "message": "Saving..."
+   },
+   "articleClipFailure": {
+      "description": "Messages shown to user when the article of the page isn't clippable.",
+      "message": "Sorry, Downsha cannot clip this page as an article. Please select the portion you wish to clip."
+   },
+   "fullPageClipFailure": {
+      "description": "Message shown to user when full page clip wasn't possible",
+      "message": "Sorry, Downsha cannot clip this entire page. Please select the portion you wish to clip."
+   },
+   "fullPageClipTooBig": {
+      "description": "Message shown to user when the full page clip is too big to POST to the server",
+      "message": "Sorry, the entire page is too big for Downsha to clip. \u003Cbr/\u003EPlease select the portion you wish to clip."
+   },
+   "illegalUrlClipFailure": {
+      "description": "Error message shown when you try to clip from pages that aren't scriptable by the browser. Such as the chrome gallery pages.",
+      "message": "Due to the restrictions set by the browser, you cannot clip this page"
+   },
+   "multipleErrorsTitle": {
+      "description": "Title for displaying a list of errors",
+      "message": "The following errors have occurred:"
+   },
+   "desktopNotification_clipUploaded": {
+      "description": "Headline for desktop notification indicating that clip was successfully uploaded",
+      "message": "Saved \"$clipTitle$\"",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_clipUploadedMessage": {
+      "description": "Message indicating that clip was successfully uploaded",
+      "message": "Page was successfully saved. Now you can use desktop and mobile apps to view and edit."
+   },
+   "desktopNotification_unableToSaveClip": {
+      "description": "Headline for desktop notifications indicating there was a problem with saving the clip",
+      "message": "Unable to save \"$clipTitle$\"",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_unableToSaveClipUnknownMessage": {
+      "description": "Description of the unknown error that may occur after the extension failed to upload a clip and now it's lost...",
+      "message": "Unknown error occured while trying to save one of your clips."
+   },
+   "invalidExpression": {
+      "description": "Indicates that form's input value contains invalid expression",
+      "message": "Invalid expression"
+   },
+   "invalidMask": {
+      "description": "Indicates that user entered an expression that does not match given mask.",
+      "message": "Invalid expression entered."
+   },
+   "invalidUsername": {
+      "description": "Specific validation error message indicating that entered username is not valid",
+      "message": "Your username must start and end with a letter or number, it can contain hyphens and underscores."
+   }, 
+   "invalidPassword": {
+      "description": "Specific validation error message indicating that entered password contains invalid characters",
+      "message": "Password must be between 6 and 16 characters long, and consist of letters, numbers and punctuation."
+   },
+   "invalidTitle": {
+      "description": "Indicates that user entered title with invalid characters",
+      "message": "Title should not contain any control characters and must not begin or end with white space."
+   },
+   "invalidTagName": {
+      "description": "Indicates that at least one tag name contains at least one invalid character",
+      "message": "Tag names cannot contain any control characters and must not begin or end with white space"
+   }, 
+   "tagNameNotInRange": {
+      "description": "Indicates that user entered a tag that's not valid in length",
+      "message": "Each tag should be between $min$ and $max$ characters long.",
+      "placeholders": {
+         "max": {
+            "content": "$2",
+            "example": "10"
+         },
+         "min": {
+            "content": "$1",
+            "example": "1"
+         }
+      }
+   },
+   "tagNamesNotInRange": {
+      "description": "Indicates that user entered an abnormal number of tags",
+      "message": "Please enter anywhere from $min$ to $max$ tags.",
+      "placeholders": {
+         "max": {
+            "content": "$2",
+            "example": "10"
+         },
+         "min": {
+            "content": "$1",
+            "example": "1"
+         }
+      }
+   },
+   "partLengthNotInRange": {
+      "description": "Indicates that each value, out of a list of values, should be between min and max characters long",
+      "message": "Each $fieldName$ should be between $min$ and $max$ characters long.",
+      "placeholders": {
+         "fieldName": {
+            "content": "$1",
+            "example": "Tag"
+         },
+         "max": {
+            "content": "$3",
+            "example": "10"
+         },
+         "min": {
+            "content": "$2",
+            "example": "1"
+         }
+      }
+   },   
+   "totalPartsNotInRange": {
+      "description": "Indicates that total number of things listed is either below minimum or above maximum number allowed",
+      "message": "Total number of $fieldName$s should be between $min$ and $max$.",
+      "placeholders": {
+         "fieldName": {
+            "content": "$1",
+            "example": "Tag"
+         },
+         "max": {
+            "content": "$3",
+            "example": "10"
+         },
+         "min": {
+            "content": "$2",
+            "example": "1"
+         }
+      }
+   },
+   "valueDoesNotMatch": {
+      "description": "Generic validation error message for fields with value not matching expected pattern",
+      "message": "$fieldName$ is not valid.",
+      "placeholders": {
+         "fieldName": {
+            "content": "$1",
+            "example": "username"
+         }
+      }
+   },
+   "valueNotInRange": {
+      "description": "Generic validation error message for values whose lenghts are outside of given range",
+      "message": "$fieldName$ should be between $min$ and $max$ characters long",
+      "placeholders": {
+         "fieldName": {
+            "content": "$1",
+            "example": "username"
+         },
+         "max": {
+            "content": "$3",
+            "example": "64"
+         },
+         "min": {
+            "content": "$2",
+            "example": "1"
+         }
+      }
+   },
+   "valueNotPresent": {
+      "description": "Generic validation error message for required form field",
+      "message": "$fieldName$ is a required field.",
+      "placeholders": {
+         "fieldName": {
+            "content": "$1",
+            "example": "username"
+         }
+      }
+   },
+   "valueNotEqualTo": {
+      "description": "Generic validation error message for fields not equal",
+      "message": "$fieldName$ is not the same value.",
+      "placeholders": {
+         "fieldName": {
+            "content": "$1",
+            "example": "username"
+         }
+      }
+   },
+   "valueTooLong": {
+      "description": "Generic validation error message for fields with length above maximum",
+      "message": "$fieldName$ cannot be longer than $num$ characters.",
+      "placeholders": {
+         "fieldName": {
+            "content": "$1",
+            "example": "username"
+         },
+         "num": {
+            "content": "$2",
+            "example": "6"
+         }
+      }
+   },
+   "valueTooShort": {
+      "description": "Generic validation error message for fields with length below minimum",
+      "message": "$fieldName$ must be at least $num$ characters long.",
+      "placeholders": {
+         "fieldName": {
+            "content": "$1",
+            "example": "username"
+         },
+         "num": {
+            "content": "$2",
+            "example": "6"
+         }
+      }
+   },
+   "DSTPError_100": {
+      "description": "INVALID_USER_ACCOUNT",
+      "message": "User account is invalid"
+   },
+   "DSTPError_101": {
+      "description": "USER_ACCOUNT_EXIST",
+      "message": "User account already exists"
+   }, 
+   "DSTPError_102": {
+      "description": "USER_ACCOUNT_NOT_EXIST",
+      "message": "User account doesn't exist"
+   },
+   "DSTPError_103": {
+      "description": "USER_ACCOUNT_OPEN_FAILED",
+      "message": "User account open failed"
+   },
+   "DSTPError_104": {
+      "description": "USER_PASSWORD_INCORRECT",
+      "message": "User password is incorrect"
+   },
+   "DSTPError_105": {
+      "description": "TERM_INFO_OPEN_FAILED",
+      "message": "Term info open failed"
+   }, 
+   "DSTPError_106": {
+      "description": "TERM_INFO_CREATE_FAILED",
+      "message": "Term info create failed"
+   },
+   "DSTPError_110": {
+      "description": "SESSION_NOT_EXIST",
+      "message": "User session doesn't exist"
+   },
+   "DSTPError_111": {
+      "description": "SESSION_CREATE_FAILED",
+      "message": "User session create failed"
+   },
+   "DSTPError_200": {
+      "description": "PARA_INVALID",
+      "message": "Parameter is invalid"
+   }, 
+   "DSTPResponseError_1": {
+      "description": "Indicates an unknown error associated with response from the request made to the server",
+      "message": "Unknown response error"
+   },
+   "DSTPResponseError_2": {
+      "description": "Indicates that the response from server was not recognizable",
+      "message": "Invalid response"
+   },
+   "Error_HTTP_Transport": {
+      "description": "Generic error indicating that the extension could not get a response from a server",
+      "message": "Problem communicating with server [$status$]. $errorText$",
+      "placeholders": {
+         "errorText": {
+            "content": "$2",
+            "example": "http error response"
+         },
+         "status": {
+            "content": "HTTP $1",
+            "example": "404"
+         }
+      }
+   },
+   "UnknownError": {
+      "description": "Used to describe an unknown error of any kind",
+      "message": "Unknown error"
+   }
+}

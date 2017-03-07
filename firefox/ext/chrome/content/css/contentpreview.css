@@ -1,0 +1,40 @@
+@import url("contentveil.css");
+
+.downshaPreviewContainer {
+	padding: 10px;
+	font-size: 18px;
+	font-weight: normal;
+	color: #696969;
+	z-index: 9999999999999998;
+}
+
+.downshaPreviewUrlContainer {
+	padding: 20px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	max-width: 50%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color: #7ebe40;
+	border-radius: 4px;
+	padding: 8px;
+	background: white;
+}
+
+.downshaPreviewUrlContainer a, 
+.downshaPreviewUrlContainer a:active, 
+.downshaPreviewUrlContainer a:hover, 
+.downshaPreviewUrlContainer a:visited {
+	color: #7ebe40;
+	text-decoration: none;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.downshaPreviewUrlContainer span {
+	display: inline;
+}

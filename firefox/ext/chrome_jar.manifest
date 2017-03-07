@@ -1,0 +1,16 @@
+content downsha jar:chrome/downsha.jar!/content/
+
+locale downsha en-US jar:chrome/downsha.jar!/locale/en-US/
+locale downsha zh-CN jar:chrome/downsha.jar!/locale/zh-CN/
+
+resource downsha-styles jar:chrome/downsha.jar!/content/css/
+resource downsha-images jar:chrome/downsha.jar!/content/images/
+
+# Firefox main window
+overlay	chrome://browser/content/browser.xul chrome://downsha/content/overlay.xul
+
+skin downsha classic/1.0 jar:chrome/downsha.jar!/skin/classic/
+
+# Firefox style
+style	chrome://browser/content/browser.xul chrome://downsha/skin/overlay.css
+style	chrome://global/content/customizeToolbar.xul chrome://downsha/skin/overlay.css

@@ -1,0 +1,45 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.url
+{
+	color: #0000ff;
+	cursor: pointer;
+	text-decoration: underline;
+}
+.url:hover
+{
+	color: #ff0000;
+}
+
+#downsha-menu {
+	list-style-image: url("chrome://downsha/skin/downsha16.png");
+}
+
+#downsha-button {
+	list-style-image: url("chrome://downsha/skin/downsha.png");
+}
+#downsha-button stack label {
+	background-color: red;
+	right: 0;
+	bottom: 0;
+	height: 11px;
+	font-size: 9px;
+	border-radius: 2px;
+	border: 1px solid #b50000; color: white;
+	background-image: -moz-linear-gradient(top, #e74142, #ce2021);
+	margin: 0;
+}
+#downsha-button stack label.small,
+#downsha-button stack label.big {
+	display: none;
+}
+
+toolbar[iconsize="small"] #downsha-button {
+	list-style-image: url("chrome://downsha/skin/downsha.png");
+	width: auto !important;
+	height: auto !important;
+}
+toolbar[iconsize="small"] #downsha-button stack label.small {
+	height: 10px;
+	font-size: 8px;
+}

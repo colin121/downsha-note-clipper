@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+	<Description about="urn:mozilla:install-manifest">
+
+		<em:id>web_clipper_firefox@downsha.com</em:id>
+		<em:version>1.0.0.21110</em:version>
+		<!-- An integer value representing the type of add-on. -->
+		<!-- 2: Extensions, 4: Themes, 8: Locale -->
+		<em:type>2</em:type>
+
+		<em:localized>
+			<Description>
+				<em:locale>en-US</em:locale>
+				<em:name>Downsha Web Clipper</em:name>
+				<em:description>Use the Downsha Web Clipper to save interesting web pages into your Downsha account. You can also view, edit, search and share clipping pages by our desktop, mobile and other web apps.</em:description>
+				<em:creator>Downsha Corporation</em:creator>
+			</Description>
+		</em:localized>
+
+		<em:localized>
+			<Description>
+				<em:locale>zh-CN</em:locale>
+				<em:name>当下云摘</em:name>
+				<em:description>当下云摘 扩展程序可以让您方便地剪辑任何网页内容并上传到个人云账户。支持正文识别以及高保真效果，支持查看历史剪辑网页。您还可以通过桌面版，手机版，网页版等其它终端查看，编辑，搜索和分享所有剪辑内容。</em:description>
+				<em:creator>北京当下信息技术有限公司</em:creator>
+			</Description>
+		</em:localized>
+
+		<em:name>Downsha Web Clipper</em:name>
+		<em:description>Use the Downsha Web Clipper to save interesting web pages into your Downsha account. You can also view, edit, search and share clipping pages by our desktop, mobile and other web apps.</em:description>
+		<em:creator>Downsha Corporation</em:creator>
+		<em:homepageURL>http://www.downsha.com/</em:homepageURL>
+		<!-- An icon to display in the add-ons list. -->
+		<!-- In Firefox 4.0 and later the icon can be up to 48x48 pixels in size. -->
+		<em:iconURL>chrome://downsha/skin/downsha48.png</em:iconURL>
+		
+		<!-- whether the extension requires its files be unpacked into a directory in order to work -->
+		<!-- In versions before Gecko 2.0 all extensions were unpacked, in Gecko 2.0 and later the default is to not unpack. -->
+		<em:unpack>false</em:unpack>
+		<!-- A Boolean value indicating if the add-on should be enabled -->
+		<!-- when the version of the application is greater than its max version. -->
+		<!-- By default, the value of this property is false meaning that -->
+		<!-- the compatibility checking will not be performed against the max version. -->
+		<em:strictCompatibility>false</em:strictCompatibility>
+		
+		<!-- For security reasons, Gecko 1.9 applications require that if you specify an updateURL, -->
+		<!-- it must be an https URL, or you must include an updateKey. -->
+		<!-- Your server must send this file as text/rdf, text/xml or application/xml+rdf. -->
+		<!-- https://developer.mozilla.org/en-US/docs/Extension_Versioning,_Update_and_Compatibility#Update_RDF_Format -->
+		<!-- Alternatively, you could host your extension on AMO and leave out the updateURL completely. -->
+		<em:updateURL>http://www.downsha.com/version/yunzhai_firefox.rdf</em:updateURL>
+		<em:updateKey>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCxL7Tl3PWf+2LZwU8VbTc/+dj4d3G5fDCkZrvmBepTDT+Lgu9AWLh+cqTzuKYQmRiTW4+xmBXctQCPVY1EnV6ZRWdkrwnsG6pdBrKnUzKyBJIPMwEFW3r0UKvecdRrJNphZhUU7DOg49r6xlbDNB4yiNNHSPENTUFa0H9Iw7YflQIDAQAB</em:updateKey>
+
+		<!-- Firefox -->
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>6.0</em:minVersion>
+				<em:maxVersion>18.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+
+	</Description>
+
+</RDF>

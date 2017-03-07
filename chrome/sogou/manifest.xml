@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension>
+	<id>com.downsha.yunzhai</id>
+	<name>当下云摘</name>
+	<show_icon>true</show_icon>
+	<description>当下云摘 扩展程序可以让您方便地剪辑任何网页内容并上传到个人云账户。支持正文识别以及高保真效果，支持查看历史剪辑网页。您还可以通过桌面版，手机版，网页版等其它终端查看，编辑，搜索和分享所有剪辑内容。</description>
+	<version>1.0.0.1</version>
+	<request_api_version>1</request_api_version>
+	<author>北京当下信息技术有限公司</author>
+</extension>

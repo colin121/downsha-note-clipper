@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://downsha/skin/overlay.css" type="text/css"?>
+<panel id="webclipperPopup" orient="vertical" autostretch="always" 
+	buttons="," defaultButton="," shadow="true" style="padding: 0px; margin: 0px; height: 32px; -moz-window-shadow: sheet" 
+	onload="init();" ondialogcancel="notifyCancel();" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<script type="text/javascript">
+		<![CDATA[
+		var contentFrame = null;
+		function init() {
+			contentFrame = window.frames[0];
+			contentFrame.overlay = window;
+			contentFrame.overlayContentContainer = document.getElementById("popupContent");
+		}
+		function notifyCancel() {
+			window.close();
+		}
+		]]>
+	</script>
+	<iframe src="chrome://downsha/content/notification.html" type="content" id="popupContent" 
+		style="box-shadow: 3px 3px 5px #888; background-color: transparent; -moz-window-shadow: default; width: 290px; height: 38px; padding: 0; margin-bottom: 3px; margin-right: 3px; overflow: hidden;" />
+</panel>

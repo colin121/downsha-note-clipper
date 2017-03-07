@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://downsha/skin/overlay.css" type="text/css"?>
+<?xml-stylesheet href="chrome://downsha/skin/toolbar.css" type="text/css"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://downsha/locale/overlay.dtd">
+
+<overlay id="webclipperOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="text/javascript" src="chrome://downsha/content/libs/md5.js"/>
+	<!--
+	<script type="text/javascript" src="chrome://downsha/content/libs/DownshaBase.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/DownshaExtend.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/DownshaOverlay.js"/>
+	-->
+	
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/Downsha.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/DownshaError.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/Constants.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/Logger/Logger.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/Logger/FirefoxExtensionLoggerImpl.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/Platform.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/LocalStore.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/Utils.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/Chrome.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/DownshaModel.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/Options.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/DownshaContext.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/ViewManager.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/DownshaRemote.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/DownshaRemoteEx.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/Extractors/ExtractContentJS.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/ContentScripting/SelectionFinder.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/ContentScripting/ClipStyle.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/ContentScripting/Clip.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/ContentScripting/ClipPreview.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/ContentScripting/PageInfo.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/ToolbarInit.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/Overlay.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/CacheManager/CacheManager.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/CacheManager/FirefoxCacheManagerImpl.js"/>	
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/ClipConverter.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/ClipSender.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/ClipHandler.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/ClipStorer.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/QueueProcessor.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/NotificationManager.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/ToolbarManager.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/TabObserver.js"/>
+	<script type="text/javascript" src="chrome://downsha/content/libs/downsha/JQueryLoader.js"/>
+	<script type="application/x-javascript">
+		<![CDATA[
+			function addSelectionToDownsha(popupSrc, rightClick) {
+				Downsha.overlay.startUp(popupSrc, rightClick);
+				return true;
+			}
+			function downsha_start() {
+				Downsha.JQueryLoader.load();
+				Downsha.overlay.initChrome();
+				Downsha.tabObserver.init();
+				Downsha.clipStorer.init();
+				Downsha.notificationManager.init();
+			}
+			window.addEventListener("load", downsha_start, false);
+		]]>
+	</script>
+	
+	<!-- context menu -->
+	<popup id="contentAreaContextMenu">
+		<menuseparator id="downsha-menu-sep" />
+		<menuitem id="downsha-menu" label="&add_to_downsha;" image="chrome://downsha/skin/downsha16.png" oncommand="return addSelectionToDownsha(document.popupNode);" />
+	</popup>
+	<!-- system menu -->
+	<menupopup id="menu_ToolsPopup">
+		<menuseparator id="downsha-menu-sep" />
+		<menuitem id="downsha-menu" label="&add_to_downsha;" image="chrome://downsha/skin/downsha16.png" oncommand="return addSelectionToDownsha(null);" />
+	</menupopup>
+	<!-- toolbar button -->
+	<toolbarpalette id="BrowserToolbarPalette">
+		<toolbarbutton id="downsha-button" label="&add_to_downsha;" tooltiptext="&add_to_downsha;" class="toolbarbutton-1 chromeclass-toolbar-additional" oncommand="return addSelectionToDownsha(null);">
+			<stack>
+				<image class="toolbarbutton-icon" left="0" top="0"/>
+				<!-- following labels are used to show processing notes count (badge) -->
+				<label value="" top="13" left="5" right="0" class="big downsha-toolbar-value"/>
+				<label value="" top="10" left="5" right="0" class="small downsha-toolbar-value"/>
+			</stack>
+			<label class="toolbarbutton-text" crop="right" value="&add_to_downsha;"/>
+		</toolbarbutton>
+	</toolbarpalette>
+	<!-- i18n definition -->
+	<stringbundleset id="stringbundleset">
+		<stringbundle id="downsha_i18n" src="chrome://downsha/locale/downsha.properties"/>
+	</stringbundleset>
+	<browser id="downshaBrowser" type="content" flex="1"></browser>
+</overlay>
+

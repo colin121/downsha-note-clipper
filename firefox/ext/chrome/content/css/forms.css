@@ -1,0 +1,79 @@
+table.formTable {
+	width: 100%;
+}
+
+table.formTable tr td {
+	text-align: right;
+	padding: 4px 4px 4px 0;
+	vertical-align: top;
+}
+
+table.formTable tr td+td {
+	text-align: left;
+	padding: 4px 0;
+	vertical-align: middle;
+}
+
+table.formTable input[type=text], 
+table.formTable input[type=password] {
+	min-width: 240px;
+	width: 240px;
+	border-radius: 4px;
+	border: 1px solid #d9d9d9;
+	box-shadow: 0 1px 0 white;
+	padding: 6px;
+}
+
+table.formTable input[type=checkbox] {
+	margin-right: 6px;
+}
+
+.compactForm .row {
+	margin: 0;
+	padding: 4px;
+	border-style: solid;
+	border-width: 0 1px 1px 1px;
+	border-color: #d9d9d9;
+	background-color: white;
+}
+
+.compactForm .row.rowPadded {
+	padding: 4px 4px 4px 24px;
+}
+
+.compactForm .row.firstRow {
+	border-top-width: 1px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.compactForm .row.lastRow {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.compactForm input[type=text], 
+.compactForm textarea {
+	margin: 0;
+	padding: 0;
+	border: none;
+	width: 85%;
+	-moz-padding-start: 4px;
+	-moz-box-sizing: border-box;
+}
+
+.compactForm textarea {
+	-moz-padding-start: 5px;
+	-moz-transform: translate(0px, 2px);
+}
+
+.compactForm .field {
+	margin-right: 5px;
+	padding-right: 5px;
+	border-right: 1px solid #b2c0a6;
+}
+
+.compactForm .actions {
+	text-align: right;
+	margin: 10px 0;
+}

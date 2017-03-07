@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="rdf:#$Eeh9g"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="6.0"
+                   em:maxVersion="18.*"
+                   em:updateLink="http://www.downsha.com/version/yunzhai_firefox_20121110.xpi"
+                   em:updateHash="sha1:61e870eda07dc5bd4b5896ed37999f8d08c2a33d" />
+  <RDF:Description RDF:about="rdf:#$Neh9g"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="6.0"
+                   em:maxVersion="18.*"
+                   em:updateLink="http://www.downsha.com/version/yunzhai_firefox_20121106.xpi"
+                   em:updateHash="sha1:bf44fefe2971ee8b48f886c9a199d45aa14deb19" />
+  <RDF:Description RDF:about="rdf:#$Keh9g"
+                   em:version="1.0.0.21106">
+    <em:targetApplication RDF:resource="rdf:#$Neh9g"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$Beh9g"
+                   em:version="1.0.0.21110">
+    <em:targetApplication RDF:resource="rdf:#$Eeh9g"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$Teh9g"
+                   em:version="1.0.0.21030">
+    <em:targetApplication RDF:resource="rdf:#$Weh9g"/>
+  </RDF:Description>
+  <RDF:Seq RDF:about="rdf:#$Aeh9g">
+    <RDF:li RDF:resource="rdf:#$Beh9g"/>
+    <RDF:li RDF:resource="rdf:#$Keh9g"/>
+    <RDF:li RDF:resource="rdf:#$Teh9g"/>
+    <RDF:li RDF:resource="rdf:#$0fh9g"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="urn:mozilla:extension:web_clipper_firefox@downsha.com"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAGUegWhzRRjxnd0NPsDNaID2/L3rpBXkLHtXorYFPRjWk1kie8Oe67OLhjya83d+Y0+nStxY9vknNHnXHWprsc1shCJ1L+yi09NEu+aHcDtQpSZkzv6HVo5HUmawUr9UIHnZpTJI+NGTvO7YLAXSrdpAlZyXr139rohEoOJ7UBZI">
+    <em:updates RDF:resource="rdf:#$Aeh9g"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$3fh9g"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="6.0"
+                   em:maxVersion="18.*"
+                   em:updateLink="http://www.downsha.com/version/yunzhai_firefox_20121028.xpi"
+                   em:updateHash="sha1:0467b768bb7f32bd1d0f0b2111205025cccc2f9a" />
+  <RDF:Description RDF:about="rdf:#$0fh9g"
+                   em:version="1.0.0.21028">
+    <em:targetApplication RDF:resource="rdf:#$3fh9g"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$Weh9g"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="6.0"
+                   em:maxVersion="18.*"
+                   em:updateLink="http://www.downsha.com/version/yunzhai_firefox_20121030.xpi"
+                   em:updateHash="sha1:c41dd6886b9c79782f6c0cbc012bfb7818476859" />
+</RDF:RDF>

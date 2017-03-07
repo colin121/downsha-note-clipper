@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/downsha.css" />
+		<link rel="stylesheet" type="text/css" href="css/notifications.css" />
+		
+		<script type="text/javascript" src="libs/jquery/jquery-1.6.2.js"></script>
+		<!--
+		<script type="text/javascript" src="libs/DownshaBase.js"></script>
+		<script type="text/javascript" src="libs/DownshaNotification.js"></script>
+		-->
+		<script type="text/javascript" src="libs/downsha/Downsha.js"></script>
+		<script type="text/javascript" src="libs/downsha/DownshaError.js"></script>
+		<script type="text/javascript" src="libs/downsha/Constants.js"></script>
+		<script type="text/javascript" src="libs/downsha/Logger/Logger.js"></script>
+		<script type="text/javascript" src="libs/downsha/Logger/FirefoxExtensionLoggerImpl.js"></script>
+		<script type="text/javascript" src="libs/downsha/Platform.js"></script>
+		<script type="text/javascript" src="libs/downsha/LocalStore.js"></script>
+		<script type="text/javascript" src="libs/downsha/Utils.js"></script>
+		<script type="text/javascript" src="libs/downsha/Chrome.js"></script>
+		<script type="text/javascript" src="libs/downsha/DownshaModel.js"></script>
+		<script type="text/javascript" src="libs/downsha/Options.js"></script>
+		<script type="text/javascript" src="libs/downsha/DownshaContext.js"></script>
+		<script type="text/javascript" src="libs/downsha/ViewManager.js"></script>
+		<script type="text/javascript" src="libs/downsha/ChromeNotification.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="title"></div>
+			<div id="close-image" class="close"><img src="images/close-notification.png"/></div>
+		</div>
+		<div class="clear"></div>
+		<div class="spacer"></div>
+		<div id="successIcon" class="notificationIcon">
+			<img src="images/downsha48.png"/>
+		</div>
+		<div id="errorIcon" class="notificationIcon" style="display: none;">
+			<img src="images/icon_notification_error.png"/>
+		</div>
+		<div id="notificationMessage" class="notificationMessage">
+			<div id="notificationHeadline" class="notificationHeadline"></div>
+			<div id="notificationDetails" class="notificationDetails"></div>
+		</div>
+	</body>
+</html>

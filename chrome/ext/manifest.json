@@ -1,0 +1,40 @@
+{
+   // Remove All comments for version of Google developer dashboard
+   "name": "__MSG_ExtensionName__",
+   "description": "__MSG_ExtensionDescription__",
+   "version": "1.2.0.21102",
+   "default_locale": "zh_CN",
+   // Remove manifest_version for 17-
+   //"manifest_version": 2,
+   // Remove key for version of Google developer dashboard
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCj9hi8MEKomOmtk2tl2cvMP8sqxcBTHU34KsRugLwICOwH3h1V2sJ9RtEO/KjobYfx9o1Nyfcaby+ZUH98yI7CCygosMTIeOdDUG7JH4XxCl3KWzyiUHsJd4D0WiGZJpaVasqboIq5/xQn/jMuo2ur5GIBEwrm7JcG6rkTGBFSDwIDAQAB",
+   "minimum_chrome_version": "7.0",
+   // Remove background for 17-
+   //"background": {
+   //		"page": "background.html"
+   //},
+   // Remove background_page for version of Google developer dashboard
+   "background_page": "background.html",
+   "browser_action": {
+      "default_icon": "images/downsha19.png",
+      "default_title": "__MSG_BrowserActionTitle__",
+      "default_popup": "popup.html"
+   },
+   "icons": {
+      "16": "images/downsha16.png",
+      "48": "images/downsha48.png",
+      "128": "images/downsha128.png"
+   },
+   "permissions": [
+   	"unlimitedStorage", 
+   	"contextMenus", 
+   	"cookies", 
+   	"tabs", 
+   	"notifications", 
+   	"http://*/*", 
+   	"https://*/*" ],
+   "web_accessible_resources": [ "css/contentclipper.css", "css/contentpreview.css", "css/contentveil.css", "images/icon_scissors.png", "images/downsha48.png", "libs/DownshaClip.js", "libs/DownshaPage.js", "libs/DownshaPreview.js" ],
+   "homepage_url": "http://www.downsha.com/",
+   // Remove update_url for version of Google developer dashboard
+   "update_url": "http://www.downsha.com/version/yunzhai_chrome.xml"
+}

@@ -1,0 +1,528 @@
+{
+   "ExtensionName": {
+      "description": "Name of the extension as it's visible to the outside world",
+      "message": "\u5F53\u4E0B\u4E91\u6458"
+   },
+   "ExtensionDescription": {
+      "description": "Description of the extension as it's visible to the outside world",
+      "message": "\u5F53\u4E0B\u4E91\u6458\u0020\u6269\u5C55\u7A0B\u5E8F\u53EF\u4EE5\u8BA9\u60A8\u65B9\u4FBF\u5730\u526A\u8F91\u4EFB\u4F55\u7F51\u9875\u5185\u5BB9\u5E76\u4E0A\u4F20\u5230\u4E2A\u4EBA\u4E91\u8D26\u6237\u3002\u652F\u6301\u6B63\u6587\u8BC6\u522B\u4EE5\u53CA\u9AD8\u4FDD\u771F\u6548\u679C\uFF0C\u652F\u6301\u67E5\u770B\u5386\u53F2\u526A\u8F91\u7F51\u9875\u3002\u60A8\u8FD8\u53EF\u4EE5\u901A\u8FC7\u684C\u9762\u7248\uFF0C\u624B\u673A\u7248\uFF0C\u7F51\u9875\u7248\u7B49\u5176\u5B83\u7EC8\u7AEF\u67E5\u770B\uFF0C\u7F16\u8F91\uFF0C\u641C\u7D22\u548C\u5206\u4EAB\u6240\u6709\u526A\u8F91\u5185\u5BB9\u3002"
+   },
+   "BrowserActionTitle": {
+      "description": "Title for the browser action that's visible to the user of extension",
+      "message": "\u4FDD\u5B58\u5230\u5F53\u4E0B\u4E91\u6458"
+   },
+   "BrowserActionTitlePending": {
+      "description": "Title for the browser action that's visible to the user of extension when there are clips being uploaded in the background",
+      "message": "\u6B63\u5728\u4E0A\u4F20\u526A\u8F91\u5185\u5BB9"
+   },
+   "copyright": {
+      "description": "Copyright statement",
+      "message": "&copy; 2011-2012, \u5317\u4EAC\u5F53\u4E0B\u4FE1\u606F\u6280\u672F\u6709\u9650\u516C\u53F8."
+   },
+   "introPageUrl": {
+      "description": "URL to the intro page for the extension",
+      "message": "http://www.downsha.com/"
+   },
+   "contextMenuClipAll": {
+      "description": "Context menu item for clipping all",
+      "message": "\u4FDD\u5B58\u5230\u5F53\u4E0B\u4E91\u6458"
+   },
+   "contextMenuPleaseLogin": {
+      "description": "Help message shown to users when they try to clip content via contextual menu items but not being intially logged in",
+      "message": "\u60A8\u8FD8\u672A\u767B\u5F55\uFF0C\u8BF7\u5148\u70B9\u51FB\u5DE5\u5177\u680F\u6309\u94AE\u0020\u5F53\u4E0B\u4E91\u6458\u0020\u8FDB\u884C\u767B\u5F55\u6216\u8005\u6CE8\u518C\u518D\u5F00\u59CB\u526A\u8F91\u7F51\u9875\u3002\u5982\u679C\u4E4B\u524D\u5DF2\u7ECF\u767B\u5F55\uFF0C\u8BF7\u68C0\u67E5\u7F51\u7EDC\u8FDE\u63A5\u662F\u5426\u6B63\u5E38\uFF01"
+   },
+   "header_slogon": {
+      "description": "Slogon text in header",
+      "message": "\u6700\u597D\u7528\u7684\u7F51\u9875\u526A\u62A5"
+   },
+   "header_register": {
+      "description": "Registration link in header",
+      "message": "\u65B0\u7528\u6237\u6CE8\u518C"
+   },
+   "header_login": {
+      "description": "Login link in header",
+      "message": "\u8001\u7528\u6237\u767B\u5F55"
+   }, 
+   "signout": {
+      "description": "Text on a link prompting for signing out currently logged in user",
+      "message": "\u6CE8\u9500"
+   }, 
+   "more": {
+      "description": "General purpose, capitalized word for More - as in - there's more to see/read etc.",
+      "message": "\u66F4\u591A"
+   },
+   "dismiss": {
+      "description": "Message shown on buttons to dismiss a widget of some kind",
+      "message": "\u5173\u95ED"
+   }, 
+   "loading": {
+      "description": "Message shown when extension is loading...",
+      "message": "\u52A0\u8F7D\u4E2D\u002E\u002E\u002E"
+   }, 
+   "unsupportedScheme": {
+      "description": "The error to display when the popup can't operate on a specific type of url.",
+      "message": "\u5F53\u524D\u7A97\u53E3\u4E0D\u662F\u6709\u6548\u7F51\u9875\uFF0C\u65E0\u6CD5\u4FDD\u5B58\u3002\u8BF7\u5148\u6253\u5F00\u7F51\u9875\u518D\u5F00\u59CB\u526A\u8F91\u3002"
+   },
+   "platform_webmini": {
+      "description": "Label for web tab",
+      "message": "\u8FF7\u4F60\u7F51\u9875\u7248"
+   },
+   "platform_desktop": {
+      "description": "Label for desktop",
+      "message": "\u4E0B\u8F7D\u684C\u9762\u7248"
+   },
+   "platform_mobile": {
+      "description": "Label for mobile",
+      "message": "\u4E0B\u8F7D\u624B\u673A\u7248"
+   },
+   "platform_windows8": {
+      "description": "Label for windows 8",
+      "message": "\u67E5\u770B\u0057\u0069\u006E\u0038\u5E94\u7528\u7248"
+   },
+   "platform_chrome": {
+      "description": "Label for chrome",
+      "message": "\u5B89\u88C5\u0043\u0068\u0072\u006F\u006D\u0065\u6269\u5C55\u7248"
+   },
+   "platform_firefox": {
+      "description": "Label for firefox",
+      "message": "\u5B89\u88C5\u706B\u72D0\u6269\u5C55\u7248"
+   },
+   "platform_ie": {
+      "description": "Label for ie",
+      "message": "\u5B89\u88C5\u0049\u0045\u526A\u8F91\u5668"
+   },
+   "platform_website": {
+      "description": "Label for website",
+      "message": "\u5B98\u65B9\u7F51\u7AD9"
+   },
+   "loggingIn": {
+      "description": "Message indicating that the extension is currently attempting to sign in user",
+      "message": "\u767B\u5F55\u4E2D\u002E\u002E\u002E"
+   },
+   "loggingOut": {
+      "description": "Message indicating that the extension is currently attempting to sign out user",
+      "message": "\u6CE8\u9500\u4E2D\u002E\u002E\u002E"
+   },
+   "loginForm_login": {
+      "description": "Login button label for login form",
+      "message": "\u767B\u5F55"
+   },
+   "loginForm_password": {
+      "description": "Label for entering password into login form",
+      "message": "\u5BC6\u7801"
+   },
+   "loginForm_rememberMe": {
+      "description": "Label for extending login session",
+      "message": "\u8BB0\u4F4F\u6211"
+   },
+   "loginForm_username": {
+      "description": "Label for entering username into login form",
+      "message": "\u7528\u6237\u540D"
+   },
+   "loginForm_usernamePrompt": {
+      "description": "Prompt for username input",
+      "message": "\u8BF7\u8F93\u5165\u60A8\u7684\u5F53\u4E0B\u4E91\u6458\u7528\u6237\u540D"
+   },
+   "registering": {
+      "description": "Message indicating that the extension is currently registering",
+      "message": "\u6CE8\u518C\u4E2D\u002E\u002E\u002E"
+   },
+   "registerForm_register": {
+      "description": "Register button label for register form",
+      "message": "\u6CE8\u518C"
+   },
+   "registerForm_password": {
+      "description": "Label for entering password into register form",
+      "message": "\u5BC6\u7801"
+   },
+   "registerForm_passwordPrompt": {
+      "description": "Prompt for password input",
+      "message": "\u0036\u002D\u0031\u0036\u4E2A\u5B57\u6BCD\u6216\u6570\u5B57\u7EC4\u5408"
+   },
+   "registerForm_password2": {
+      "description": "Label for confirming password into register form",
+      "message": "\u786E\u8BA4\u5BC6\u7801"
+   },
+   "registerForm_password2Prompt": {
+      "description": "Prompt for password2 input",
+      "message": "\u8BF7\u518D\u6B21\u8F93\u5165\u60A8\u7684\u5BC6\u7801"
+   },
+   "registerForm_username": {
+      "description": "Label for entering username into register form",
+      "message": "\u7528\u6237\u540D"
+   },
+   "registerForm_usernamePrompt": {
+      "description": "Prompt for username input",
+      "message": "\u0036\u002D\u0031\u0036\u4E2A\u5B57\u7B26\uFF0C\u652F\u6301\u4E2D\u82F1\u6587"
+   },
+   "quickNote": {
+      "description": "Title for creating quick note",
+      "message": "\u4FDD\u5B58"
+   },
+   "quickNote_clipSelectionTip": {
+      "description": "Label for tips in clip selection mode",
+      "message": "\u6B64\u6A21\u5F0F\u53EA\u526A\u8F91\u60A8\u9009\u4E2D\u7684\u5185\u5BB9\uFF0C\u5EFA\u8BAE\u9009\u53D6\u7CBE\u534E\u90E8\u5206\u518D\u4FDD\u5B58"
+   },
+   "quickNote_clipArticleTip": {
+      "description": "Label for tips in clip article mode",
+      "message": "\u60A8\u8FD8\u53EF\u4EE5\u624B\u5DE5\u8C03\u6574\u6B63\u6587\u533A\u57DF"
+   },
+   "quickNote_clipFullPageTip": {
+      "description": "Label for tips in clip full page mode",
+      "message": "\u6269\u5C55\u53EF\u4EE5\u526A\u89C6\u9891\u5566\uFF0C\u652F\u6301\u4F18\u9177\u002F\u571F\u8C46\u002F\u5947\u827A\u002F\u641C\u72D0\u002F\u817E\u8BAF\u002F\u7F51\u6613"
+   },
+   "quickNote_clipUrlTip": {
+      "description": "Label for tips in clip url mode",
+      "message": "\u6B64\u6A21\u5F0F\u53EA\u8BB0\u5F55\u5F53\u524D\u7F51\u5740\u548C\u6807\u9898\uFF0C\u4F46\u4E0D\u526A\u8F91\u5177\u4F53\u5185\u5BB9"
+   },
+   "quickNote_articleExpand": {
+      "description": "Label for expand article",
+      "message": "\u653E\u5927\u6B63\u6587\u533A\u57DF"
+   },
+   "quickNote_articleShrink": {
+      "description": "Label for shrink article",
+      "message": "\u7F29\u5C0F\u6B63\u6587\u533A\u57DF"
+   },
+   "quickNote_articlePrev": {
+      "description": "Label for previous article",
+      "message": "\u9009\u62E9\u4E0A\u4E00\u6BB5\u4F5C\u4E3A\u6B63\u6587"
+   },
+   "quickNote_articleNext": {
+      "description": "Label for next article",
+      "message": "\u9009\u62E9\u4E0B\u4E00\u6BB5\u4F5C\u4E3A\u6B63\u6587"
+   },
+   "quickNoteAction_clipArticle": {
+      "description": "Label for clipping article action",
+      "message": "\u6B63\u6587\u90E8\u5206"
+   },
+   "quickNoteAction_clipFullPage": {
+      "description": "Label for clipping full page action",
+      "message": "\u6574\u4E2A\u7F51\u9875"
+   },
+   "quickNoteAction_clipSelection": {
+      "description": "Label for clipping selection action",
+      "message": "\u9009\u4E2D\u90E8\u5206"
+   },
+   "quickNoteAction_clipUrl": {
+      "description": "Label for clipping URL action",
+      "message": "\u4EC5\u6807\u9898\u548C\u7F51\u5740"
+   },
+   "quickNote_addTags": {
+      "description": "Placeholder text for tag input",
+      "message": "\u6DFB\u52A0\u6807\u7B7E"
+   },
+   "quickNote_cancel": {
+      "description": "Label for dismissing quick note composition dialog",
+      "message": "\u53D6\u6D88"
+   },
+   "quickNote_notebook": {
+      "description": "Label for selection of note's notebook",
+      "message": "\u76EE\u5F55"
+   },
+   "quickNote_submit": {
+      "description": "Label for saving quick note",
+      "message": "\u4FDD\u5B58"
+   },
+   "quickNote_tagNames": {
+      "description": "Label for note's tags",
+      "message": "\u6807\u7B7E"
+   },
+   "quickNote_title": {
+      "description": "Label for note title",
+      "message": "\u6807\u9898"
+   },
+   "quickNote_content": {
+      "description": "Label for note content",
+      "message": "\u5185\u5BB9"
+   },
+   "quickNote_untitledNote": {
+      "description": "Placeholder title for untitled note",
+      "message": "\u65E0\u6807\u9898\u7F51\u9875"
+   },
+   "contentScriptTimedOut": {
+      "description": "Message shown to user when the page is unresponsive and the extension cannot gather any content from the webpage.",
+      "message": "\u5F53\u524D\u7F51\u9875\u65E0\u54CD\u5E94\uFF0C\u65E0\u6CD5\u4FDD\u5B58\u5176\u5185\u5BB9\u3002"
+   },
+   "contentclipper_clipping": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping... Should be as brief as possible",
+      "message": "\u4FDD\u5B58\u4E2D\u002E\u002E\u002E"
+   },
+   "articleClipFailure": {
+      "description": "Messages shown to user when the article of the page isn't clippable.",
+      "message": "\u5BF9\u4E0D\u8D77\uFF0C\u65E0\u6CD5\u4FDD\u5B58\u6B63\u6587\u5185\u5BB9\uFF0C\u60A8\u53EF\u4EE5\u9009\u4E2D\u90E8\u5206\u5185\u5BB9\u518D\u4FDD\u5B58\u3002"
+   },
+   "fullPageClipFailure": {
+      "description": "Message shown to user when full page clip wasn't possible",
+      "message": "\u5BF9\u4E0D\u8D77\uFF0C\u65E0\u6CD5\u4FDD\u5B58\u5168\u90E8\u5185\u5BB9\uFF0C\u60A8\u53EF\u4EE5\u9009\u4E2D\u90E8\u5206\u5185\u5BB9\u518D\u4FDD\u5B58\u3002"
+   },
+   "fullPageClipTooBig": {
+      "description": "Message shown to user when the full page clip is too big to POST to the server",
+      "message": "\u5BF9\u4E0D\u8D77\uFF0C\u7F51\u9875\u5185\u5BB9\u592A\u5927\u65E0\u6CD5\u5168\u90E8\u4FDD\u5B58\uFF0C\u60A8\u53EF\u4EE5\u9009\u4E2D\u90E8\u5206\u5185\u5BB9\u518D\u4FDD\u5B58\u3002"
+   },
+   "illegalUrlClipFailure": {
+      "description": "Error message shown when you try to clip from pages that aren't scriptable by the browser. Such as the chrome gallery pages.",
+      "message": "\u5BF9\u4E0D\u8D77\uFF0C\u7531\u4E8E\u6D4F\u89C8\u5668\u7684\u9650\u5236\uFF0C\u65E0\u6CD5\u4FDD\u5B58\u5F53\u524D\u7F51\u9875\u5185\u5BB9"
+   },
+   "multipleErrorsTitle": {
+      "description": "Title for displaying a list of errors",
+      "message": "The following errors have occurred:"
+   },
+   "desktopNotification_clipUploaded": {
+      "description": "Headline for desktop notification indicating that clip was successfully uploaded",
+      "message": "\u4FDD\u5B58\u6210\u529F\uFF1A\"$clipTitle$\"",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_clipUploadedMessage": {
+      "description": "Message indicating that clip was successfully uploaded",
+      "message": "\u60A8\u73B0\u5728\u53EF\u4EE5\u4F7F\u7528\u624B\u673A\u7248\u6216\u0050\u0043\u684C\u9762\u7248\u540C\u6B65\u8BBF\u95EE\u4FDD\u5B58\u7684\u5185\u5BB9\u5566\uFF01"
+   },
+   "desktopNotification_unableToSaveClip": {
+      "description": "Headline for desktop notifications indicating there was a problem with saving the clip",
+      "message": "\u65E0\u6CD5\u4FDD\u5B58 \"$clipTitle$\"",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_unableToSaveClipUnknownMessage": {
+      "description": "Description of the unknown error that may occur after the extension failed to upload a clip and now it's lost...",
+      "message": "\u4FDD\u5B58\u8FC7\u7A0B\u4E2D\u51FA\u9519\u5566\uFF0C\u8BF7\u68C0\u67E5\u7F51\u7EDC\u8FDE\u63A5\uFF01"
+   },
+   "invalidExpression": {
+      "description": "Indicates that form's input value contains invalid expression",
+      "message": "Invalid expression"
+   },
+   "invalidMask": {
+      "description": "Indicates that user entered an expression that does not match given mask.",
+      "message": "Invalid expression entered."
+   },
+   "invalidUsername": {
+      "description": "Specific validation error message indicating that entered username is not valid",
+      "message": "\u7528\u6237\u540D\u65E0\u6548\uFF0C\u8BF7\u68C0\u67E5\u662F\u5426\u5305\u542B\u7279\u6B8A\u5B57\u7B26"
+   }, 
+   "invalidPassword": {
+      "description": "Specific validation error message indicating that entered password contains invalid characters",
+      "message": "\u5BC6\u7801\u65E0\u6548\uFF0C\u8BF7\u68C0\u67E5\u662F\u5426\u5305\u542B\u7279\u6B8A\u5B57\u7B26"
+   },
+   "invalidTitle": {
+      "description": "Indicates that user entered title with invalid characters",
+      "message": "\u6807\u9898\u65E0\u6548\uFF0C\u8BF7\u68C0\u67E5\u662F\u5426\u5305\u542B\u7A7A\u767D\u5B57\u7B26"
+   },
+   "invalidTagName": {
+      "description": "Indicates that at least one tag name contains at least one invalid character",
+      "message": "Tag names cannot contain any control characters and must not begin or end with white space"
+   }, 
+   "tagNameNotInRange": {
+      "description": "Indicates that user entered a tag that's not valid in length",
+      "message": "Each tag should be between $min$ and $max$ characters long.",
+      "placeholders": {
+         "max": {
+            "content": "$2",
+            "example": "10"
+         },
+         "min": {
+            "content": "$1",
+            "example": "1"
+         }
+      }
+   },
+   "tagNamesNotInRange": {
+      "description": "Indicates that user entered an abnormal number of tags",
+      "message": "Please enter anywhere from $min$ to $max$ tags.",
+      "placeholders": {
+         "max": {
+            "content": "$2",
+            "example": "10"
+         },
+         "min": {
+            "content": "$1",
+            "example": "1"
+         }
+      }
+   },
+   "partLengthNotInRange": {
+      "description": "Indicates that each value, out of a list of values, should be between min and max characters long",
+      "message": "Each $fieldName$ should be between $min$ and $max$ characters long.",
+      "placeholders": {
+         "fieldName": {
+            "content": "$1",
+            "example": "Tag"
+         },
+         "max": {
+            "content": "$3",
+            "example": "10"
+         },
+         "min": {
+            "content": "$2",
+            "example": "1"
+         }
+      }
+   },   
+   "totalPartsNotInRange": {
+      "description": "Indicates that total number of things listed is either below minimum or above maximum number allowed",
+      "message": "Total number of $fieldName$s should be between $min$ and $max$.",
+      "placeholders": {
+         "fieldName": {
+            "content": "$1",
+            "example": "Tag"
+         },
+         "max": {
+            "content": "$3",
+            "example": "10"
+         },
+         "min": {
+            "content": "$2",
+            "example": "1"
+         }
+      }
+   },
+   "valueDoesNotMatch": {
+      "description": "Generic validation error message for fields with value not matching expected pattern",
+      "message": "$fieldName$ \u65E0\u6548.",
+      "placeholders": {
+         "fieldName": {
+            "content": "$1",
+            "example": "username"
+         }
+      }
+   },
+   "valueNotInRange": {
+      "description": "Generic validation error message for values whose lenghts are outside of given range",
+      "message": "$fieldName$ \u5B57\u7B26\u6570\u5E94\u5728 $min$ - $max$ \u4E4B\u95F4",
+      "placeholders": {
+         "fieldName": {
+            "content": "$1",
+            "example": "username"
+         },
+         "max": {
+            "content": "$3",
+            "example": "64"
+         },
+         "min": {
+            "content": "$2",
+            "example": "1"
+         }
+      }
+   },
+   "valueNotPresent": {
+      "description": "Generic validation error message for required form field",
+      "message": "$fieldName$ \u5C5E\u4E8E\u5FC5\u586B\u5B57\u6BB5",
+      "placeholders": {
+         "fieldName": {
+            "content": "$1",
+            "example": "username"
+         }
+      }
+   },
+   "valueNotEqualTo": {
+      "description": "Generic validation error message for fields not equal",
+      "message": "\u4E24\u6B21\u8F93\u5165\u7684$fieldName$\u4E0D\u4E00\u81F4",
+      "placeholders": {
+         "fieldName": {
+            "content": "$1",
+            "example": "username"
+         }
+      }
+   },
+   "valueTooLong": {
+      "description": "Generic validation error message for fields with length above maximum",
+      "message": "$fieldName$ \u4E0D\u80FD\u8D85\u8FC7 $num$ \u4E2A\u5B57\u7B26",
+      "placeholders": {
+         "fieldName": {
+            "content": "$1",
+            "example": "username"
+         },
+         "num": {
+            "content": "$2",
+            "example": "6"
+         }
+      }
+   },
+   "valueTooShort": {
+      "description": "Generic validation error message for fields with length below minimum",
+      "message": "$fieldName$ \u4E0D\u80FD\u5C11\u4E8E $num$ \u4E2A\u5B57\u7B26",
+      "placeholders": {
+         "fieldName": {
+            "content": "$1",
+            "example": "username"
+         },
+         "num": {
+            "content": "$2",
+            "example": "6"
+         }
+      }
+   },
+   "DSTPError_100": {
+      "description": "INVALID_USER_ACCOUNT",
+      "message": "\u7528\u6237\u540D\u65E0\u6548"
+   },
+   "DSTPError_101": {
+      "description": "USER_ACCOUNT_EXIST",
+      "message": "\u7528\u6237\u540D\u5DF2\u88AB\u5360\u7528"
+   }, 
+   "DSTPError_102": {
+      "description": "USER_ACCOUNT_NOT_EXIST",
+      "message": "\u7528\u6237\u540D\u4E0D\u5B58\u5728"
+   },
+   "DSTPError_103": {
+      "description": "USER_ACCOUNT_OPEN_FAILED",
+      "message": "\u670D\u52A1\u5668\u5185\u90E8\u9519\u8BEF"
+   },
+   "DSTPError_104": {
+      "description": "USER_PASSWORD_INCORRECT",
+      "message": "\u7528\u6237\u540D\u548C\u5BC6\u7801\u4E0D\u5339\u914D"
+   },
+   "DSTPError_105": {
+      "description": "TERM_INFO_OPEN_FAILED",
+      "message": "\u670D\u52A1\u5668\u5185\u90E8\u9519\u8BEF"
+   }, 
+   "DSTPError_106": {
+      "description": "TERM_INFO_CREATE_FAILED",
+      "message": "\u670D\u52A1\u5668\u5185\u90E8\u9519\u8BEF"
+   },
+   "DSTPError_110": {
+      "description": "SESSION_NOT_EXIST",
+      "message": "\u7528\u6237\u767B\u5F55\u4F1A\u8BDD\u5931\u6548\u6216\u5DF2\u8FC7\u671F"
+   },
+   "DSTPError_111": {
+      "description": "SESSION_CREATE_FAILED",
+      "message": "\u670D\u52A1\u5668\u5185\u90E8\u9519\u8BEF"
+   },
+   "DSTPError_200": {
+      "description": "PARA_INVALID",
+      "message": "\u65E0\u6548\u53C2\u6570"
+   }, 
+   "DSTPResponseError_1": {
+      "description": "Indicates an unknown error associated with response from the request made to the server",
+      "message": "Unknown response error"
+   },
+   "DSTPResponseError_2": {
+      "description": "Indicates that the response from server was not recognizable",
+      "message": "Invalid response"
+   },
+   "Error_HTTP_Transport": {
+      "description": "Generic error indicating that the extension could not get a response from a server",
+      "message": "\u7F51\u7EDC\u65AD\u5F00\u5566\uFF0C\u8BF7\u68C0\u67E5\u60A8\u7684\u7F51\u7EDC\u8FDE\u63A5\u3002\u0020\u72B6\u6001\u7801 [$status$]. $errorText$",
+      "placeholders": {
+         "errorText": {
+            "content": "$2",
+            "example": "http error response"
+         },
+         "status": {
+            "content": "HTTP $1",
+            "example": "404"
+         }
+      }
+   },
+   "UnknownError": {
+      "description": "Used to describe an unknown error of any kind",
+      "message": "\u672A\u77E5\u9519\u8BEF"
+   }
+}

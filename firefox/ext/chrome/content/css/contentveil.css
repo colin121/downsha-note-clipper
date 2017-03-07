@@ -1,0 +1,8 @@
+.downshaContentVeil {
+	margin: 0;
+	padding: 0;
+	border: none;
+	z-index: 999990;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
